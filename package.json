@@ -1,0 +1,16 @@
+{
+  "name": "paso-erp",
+  "version": "1.2.0",
+  "private": true,
+  "type": "module",
+  "description": "ERP para una tienda de zapatillas: inventario, ventas, compras y caja.",
+  "engines": { "node": ">=22.14.0" },
+  "scripts": {
+    "start": "node server/server.mjs",
+    "dev": "node --watch server/server.mjs",
+    "check": "node scripts/check.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "diagnostico": "node scripts/doctor.mjs",
+    "test:entrega": "node scripts/smoke-distribution.mjs"
+  }
+}
