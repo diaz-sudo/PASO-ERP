@@ -5,7 +5,7 @@ import { createApp } from './app.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)),'..');
 const path = resolve(root,process.env.DB_PATH || 'data/erp.sqlite');
-const host = process.env.HOST || '127.0.0.1';
+const host = process.env.HOST || '0.0.0.0';
 const port = Number(process.env.PORT || 3100);
 if(!Number.isInteger(port) || port<0 || port>65535) {
   console.error('PORT debe ser un entero entre 1 y 65535 (0 se reserva para pruebas).');
